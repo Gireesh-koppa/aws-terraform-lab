@@ -1,10 +1,16 @@
 
+
 terraform {
   required_version = ">= 1.0.0"
 }
 
+variable "message_text" {
+  type        = string
+  description = "Message provided through Terraform Cloud"
+}
+
 resource "terraform_data" "demo" {
-  input = "Hello from Terraform Cloud!"
+  input = var.message_text
 }
 
 output "message" {
