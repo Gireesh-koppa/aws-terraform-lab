@@ -10,8 +10,7 @@ variable "message_text" {
 }
 variable "name"{
     type=string
-    default=gireesh
-
+    description = "Message provided through Terraform Cloud"
 }
 
 resource "terraform_data" "demo" {
