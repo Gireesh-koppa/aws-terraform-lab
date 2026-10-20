@@ -16,3 +16,7 @@ resource "terraform_data" "demo" {
 output "message" {
   value = terraform_data.demo.output
 }
+
+output "name"{
+   value="gireesh"
+}
